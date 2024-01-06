@@ -1,0 +1,16 @@
+<input #numip type="text" placeholder="enter number">
+
+
+<input #strip type="text" placeholder="prime even odd">
+
+<br>
+<br>
+
+<button (click)="GetStr(strip.value)" (click)="GetNum(numip.value)">enter</button>
+
+<br>
+<br>
+
+<h1> {{num | marvellouschk : title}} </h1>
+
+<router-outlet></router-outlet>
