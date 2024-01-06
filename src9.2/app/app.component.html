@@ -1,0 +1,16 @@
+<input #ip1 type="text" placeholder="enter number">
+
+<br>
+
+<input #ip2 type="text" placeholder="enter number">
+
+<br>
+<br>
+
+<button (click)="getNum2(ip2.value)" (click)="getNum1(ip1.value)">submit</button>
+
+<h2>Addition is : {{num1 | add : num2}}</h2>
+
+<h2>Multiplication is : {{num1 | mult : num2}} </h2>
+
+<router-outlet></router-outlet>
